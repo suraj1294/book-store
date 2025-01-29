@@ -134,7 +134,6 @@ const FileUpload = ({
         onUploadStart={() => setProgress(0)}
         onUploadProgress={({ loaded, total }) => {
           const percent = Math.round((loaded / total) * 100);
-
           setProgress(percent);
         }}
         folder={folder}

@@ -1,29 +1,30 @@
+import { auth } from "@/auth";
 import BookList from "@/components/book-list";
 import BookOverview from "@/components/book-overview";
-import { sampleBooks } from "@/constants";
 
-const testBook = sampleBooks[0];
+import db from "@/lib/db";
+import { books } from "@/lib/schema";
+import { desc } from "drizzle-orm";
 
 export default async function Home() {
+  const session = await auth();
+  const latestBooks = (await db
+    .select()
+    .from(books)
+    .limit(10)
+    .orderBy(desc(books.createdAt))) as Book[];
+
   return (
     <div>
       <BookOverview
-        userId={testBook.author}
-        id={testBook.id.toString()}
-        title={testBook.title}
-        author={testBook.author}
-        genre={testBook.genre}
-        rating={testBook.rating}
-        totalCopies={testBook.totalCopies}
-        availableCopies={testBook.availableCopies}
-        description={testBook.description}
-        coverColor={testBook.coverColor}
-        coverUrl={testBook.coverUrl}
-        videoUrl={testBook.videoUrl}
-        summary={testBook.summary}
-        createdAt={null}
+        {...latestBooks[0]}
+        userId={+(session?.user?.id ?? 0) as number}
       />
-      <BookList title={""} books={sampleBooks} />
+      <BookList
+        title={"Latest Books"}
+        books={latestBooks.slice(1)}
+        containerClassName="mt-28"
+      />
     </div>
   );
 }

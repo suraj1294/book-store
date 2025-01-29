@@ -27,6 +27,7 @@ import { FIELD_NAMES, FIELD_TYPES } from "@/constants";
 import { toast } from "@/hooks/use-toast";
 import { useRouter } from "next/navigation";
 import FileUpload from "./file-upload";
+import { useState } from "react";
 
 interface Props<T extends FieldValues> {
   schema: ZodType<T>;
@@ -44,6 +45,7 @@ const AuthForm = <T extends FieldValues>({
   const router = useRouter();
 
   const isSignIn = type === "SIGN_IN";
+  const [isSubmitting, setSubmitting] = useState(false);
 
   const form: UseFormReturn<T> = useForm({
     resolver: zodResolver(schema),
@@ -51,9 +53,11 @@ const AuthForm = <T extends FieldValues>({
   });
 
   const handleSubmit: SubmitHandler<T> = async (data) => {
+    setSubmitting(true);
     const result = await onSubmit(data);
 
     if (result.success) {
+      setSubmitting(false);
       toast({
         title: "Success",
         description: isSignIn
@@ -63,6 +67,7 @@ const AuthForm = <T extends FieldValues>({
 
       router.push("/");
     } else {
+      setSubmitting(false);
       toast({
         title: `Error ${isSignIn ? "signing in" : "signing up"}`,
         description: result.error ?? "An error occurred.",
@@ -123,7 +128,8 @@ const AuthForm = <T extends FieldValues>({
             />
           ))}
 
-          <Button type="submit" className="form-btn">
+          <Button type="submit" disabled={isSubmitting} className="form-btn">
+            {isSubmitting ? "Loading..." : ""}
             {isSignIn ? "Sign In" : "Sign Up"}
           </Button>
         </form>
