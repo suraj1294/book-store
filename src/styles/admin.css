@@ -6,7 +6,6 @@
   .admin-container {
     @apply flex w-[calc(100%-264px)] flex-1 flex-col bg-light-300 p-5 xs:p-10;
   }
-
   .back-btn {
     @apply mb-10 w-fit border border-light-300 bg-white text-xs font-medium text-dark-200 hover:bg-light-300 !important;
   }
