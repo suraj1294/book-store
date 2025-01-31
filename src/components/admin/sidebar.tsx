@@ -37,7 +37,7 @@ const Sidebar = ({ session }: { session: Session }) => {
                 <div
                   className={cn(
                     "link",
-                    isSelected && "bg-primary-admin shadow-sm"
+                    isSelected && "bg-primary-admin shadow-xs"
                   )}
                 >
                   <div className="relative size-5">
