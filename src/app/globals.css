@@ -102,67 +102,67 @@
   }
 }
 
-@utility form-btn {
+.form-btn {
   @apply bg-primary! text-dark-100! hover:bg-primary! inline-flex! min-h-14! w-full! items-center! justify-center! rounded-md! px-6! py-2! font-bold! text-base!;
 }
 
-@utility form-input {
+.form-input {
   @apply w-full! min-h-14! border-none! text-base! font-bold! placeholder:font-normal! text-white! placeholder:text-light-100! focus-visible:ring-0! focus-visible:shadow-none! bg-dark-300!;
 }
 
-@utility book-title {
+.book-title {
   /* Book Card */
   @apply mt-2 line-clamp-1 text-base font-semibold text-white xs:text-xl;
 }
 
-@utility book-genre {
+.book-genre {
   @apply mt-1 line-clamp-1 text-sm italic text-light-100 xs:text-base;
 }
 
-@utility book-loaned {
+.book-loaned {
   @apply flex flex-row items-center gap-1 max-xs:justify-center;
 }
 
-@utility book-btn {
+.book-btn {
   @apply bg-dark-600 mt-3 min-h-14 w-full font-bebas-neue text-base text-primary;
 }
 
-@utility borrowed-book {
+.borrowed-book {
   /* Borrowed Book */
   @apply gradient-vertical p-5 rounded-2xl xs:w-min w-full relative;
 }
 
-@utility borrowed-book_cover {
+.borrowed-book_cover {
   @apply py-4 lg:px-16 px-10 flex justify-center items-center w-full rounded-lg;
 }
 
-@utility book-cover_extra_small {
+.book-cover_extra_small {
   /* Book Cover */
   @apply w-[28.95px] h-10;
 }
 
-@utility book-cover_small {
+.book-cover_small {
   @apply w-[55px] h-[76px];
 }
 
-@utility book-cover_medium {
+.book-cover_medium {
   @apply w-[144px] h-[199px];
 }
 
-@utility book-cover_regular {
+.book-cover_regular {
   @apply xs:w-[174px] w-[114px] xs:h-[239px] h-[169px];
 }
 
-@utility book-cover_wide {
+.book-cover_wide {
   @apply xs:w-[296px] w-[256px] xs:h-[404px] h-[354px];
 }
 
-@utility book-list {
+.book-list {
   /* Book List */
   @apply mt-10 flex flex-wrap gap-5 max-xs:justify-between xs:gap-10;
 }
 
-@utility book-overview {
+.book-overview {
   /* Book Overview */
   @apply flex flex-col-reverse items-center gap-12 sm:gap-32 xl:flex-row xl:gap-8;
 
@@ -171,11 +171,11 @@
   }
 }
 
-@utility book-info {
+.book-info {
   @apply mt-7 flex flex-row flex-wrap gap-4 text-xl text-light-100;
 }
 
-@utility book-copies {
+.book-copies {
   @apply flex flex-row flex-wrap gap-4 mt-1;
 
   & p {
@@ -187,67 +187,67 @@
   }
 }
 
-@utility book-description {
+.book-description {
   @apply mt-2 text-justify text-xl text-light-100;
 }
 
-@utility book-overview_btn {
+.book-overview_btn {
   @apply mt-4! min-h-14! w-fit! bg-primary! text-dark-100! hover:bg-primary/90! max-md:w-full!;
 }
 
-@utility upload-btn {
+.upload-btn {
   /* File Upload */
   @apply flex min-h-14 w-full items-center justify-center gap-1.5 rounded-md;
 }
 
-@utility upload-filename {
+.upload-filename {
   @apply mt-1 text-center text-xs;
 }
 
-@utility progress {
+.progress {
   @apply rounded-full bg-green-800 p-0.5 text-center font-bebas-neue text-[8px] font-bold leading-none text-light-100;
 }
 
-@utility search {
+.search {
   /* Search */
   @apply relative mt-10 flex min-h-14 w-full items-center rounded-xl bg-dark-300 px-4;
 }
 
-@utility search-input {
+.search-input {
   @apply w-full! border-none! font-bold! placeholder:font-normal! text-white! placeholder:text-light-100! focus-visible:ring-0! focus-visible:shadow-none!;
 }
 
-@utility book-receipt_admin-btn {
+.book-receipt_admin-btn {
   /* Book Receipt */
   @apply bg-light-300! rounded-md! text-primary-admin! font-semibold! hover:bg-light-300/80!;
 }
 
-@utility book-ticket-circles {
+.book-ticket-circles {
   @apply absolute inset-x-0 -bottom-6 flex flex-row gap-1.5;
 }
 
-@utility not-found-btn {
+.not-found-btn {
   @apply bg-primary! font-bebas-neue! min-w-[360px]! mt-6! text-dark-100! text-xl! hover:bg-primary/90! min-h-12!;
 }
 
-@utility pagination-btn_light {
+.pagination-btn_light {
   @apply bg-light-300! text-dark-300! hover:bg-light-300/70!;
 }
 
-@utility pagination-btn_dark {
+.pagination-btn_dark {
   @apply bg-dark-300! hover:bg-dark-100!;
 }
 
-@utility select-trigger {
+.select-trigger {
   /* Sort */
   @apply w-40! h-10! px-4! bg-dark-300! text-light-100! border-dark-100!;
 }
 
-@utility select-content {
+.select-content {
   @apply bg-dark-300! text-light-100! border-dark-100!;
 }
 
-@utility select-item {
+.select-item {
   @apply focus:bg-dark-600! focus:text-light-100!;
 }
 
@@ -255,37 +255,37 @@
   background: linear-gradient(180deg, #12141d 0%, #12151f 100%);
 }
 
-@utility gradient-gray {
+.gradient-gray {
   background: linear-gradient(270deg, #37363a 0%, #353637 100%);
 }
 
-@utility gradient-blue {
+.gradient-blue {
   background: linear-gradient(180deg, #232839 0%, #12141d 100%);
 }
 
-@utility auth-container {
+.auth-container {
   /* Auth */
   @apply relative flex flex-col-reverse text-light-100 sm:flex-row;
 }
 
-@utility auth-form {
+.auth-form {
   @apply my-auto flex h-full min-h-screen flex-1 items-center bg-pattern bg-cover bg-top bg-dark-100 px-5 py-10;
 }
 
-@utility auth-box {
+.auth-box {
   @apply gradient-vertical mx-auto flex max-w-xl flex-col gap-6 rounded-lg p-10;
 }
 
-@utility auth-illustration {
+.auth-illustration {
   @apply sticky h-40 w-full sm:top-0 sm:h-screen sm:flex-1;
 }
 
-@utility root-container {
+.root-container {
   /* Root */
   @apply flex min-h-screen flex-1 flex-col bg-pattern bg-cover bg-top bg-dark-100 px-5 xs:px-10 md:px-16;
 }
 
-@utility book-details {
+.book-details {
   /* Book Details */
   @apply lg:mt-36 mt-16 mb-20 flex flex-col gap-16 lg:flex-row;
 
@@ -294,310 +294,17 @@
   }
 }
 
-@utility library {
+.library {
   /* Library */
   @apply mx-auto flex max-w-xl w-full flex-col text-center;
 }
 
-@utility library-subtitle {
+.library-subtitle {
   @apply text-lg font-semibold uppercase text-light-100;
 }
 
-@utility library-title {
+.library-title {
   @apply mt-2 text-3xl font-semibold text-white xs:text-5xl;
-}
-
-@utility admin-container {
-  @apply flex w-[calc(100%-264px)] flex-1 flex-col bg-light-300 p-5 xs:p-10;
-}
-
-@utility back-btn {
-  @apply mb-10! w-fit! border! border-light-300! bg-white! text-xs! font-medium! text-dark-200! hover:bg-light-300!;
-}
-
-@utility confirm-trigger {
-  /* Confirmation Dialog */
-  @apply font-semibold! text-sm! shadow-none! w-full!;
-}
-
-@utility confirm-approve {
-  @apply bg-green-100! text-green-800! hover:bg-green-100/70!;
-}
-
-@utility confirm-reject {
-  @apply bg-red-100! text-red-800! hover:bg-red-100/70!;
-}
-
-@utility confirm-content {
-  @apply sm:max-w-md! flex! flex-col! items-center! justify-center! p-6!;
-}
-
-@utility confirm-illustration {
-  @apply size-28 rounded-full flex justify-center items-center mx-auto;
-
-  & div:first-child {
-    @apply size-[70%] rounded-full flex justify-center items-center;
-  }
-}
-
-@utility confirm-btn {
-  @apply w-full! min-h-14! rounded-xl! font-bold! text-base! text-light-800!;
-}
-
-@utility book-form_input {
-  /* Book Form */
-  @apply min-h-14! border! border-gray-100! bg-light-600! p-4! text-base! font-semibold! placeholder:font-normal! placeholder:text-slate-500!;
-}
-
-@utility book-form_btn {
-  @apply min-h-14! w-full! bg-primary-admin! hover:bg-primary-admin/95!;
-}
-
-@utility view-btn {
-  /* Home Page */
-  @apply bg-light-300! rounded-md! text-primary-admin! font-semibold! hover:bg-light-300/80! shadow-none!;
-}
-
-@utility add-new-book_btn {
-  @apply mt-7 mb-3 bg-light-300 py-4 px-3 flex flex-row items-center rounded-xl gap-4;
-
-  & div:first-child {
-    @apply size-12 bg-white rounded-full flex justify-center items-center;
-  }
-
-  & p:first-child {
-    @apply font-semibold text-lg text-dark-400;
-  }
-}
-
-@utility stat {
-  /* Statistics */
-  @apply bg-white rounded-xl p-5 space-y-5 flex-1;
-}
-
-@utility stat-info {
-  @apply flex justify-between items-center gap-5;
-}
-
-@utility stat-label {
-  @apply font-medium text-base text-light-500 whitespace-nowrap;
-}
-
-@utility stat-count {
-  @apply font-semibold text-3xl text-dark-400;
-}
-
-@utility book-stripe {
-  /* Book Stripe */
-  @apply flex flex-row gap-4 bg-light-300 p-4 rounded-lg;
-
-  & .title {
-    @apply font-semibold text-base text-dark-400 line-clamp-1;
-  }
-
-  & .author {
-    @apply flex flex-wrap flex-row items-center gap-2;
-  }
-
-  & .author p:first-child {
-    @apply text-light-500 text-sm line-clamp-1;
-  }
-
-  & .author div {
-    @apply size-1 rounded-full bg-light-500;
-  }
-
-  & .author p:last-child {
-    @apply text-light-500 text-sm;
-  }
-
-  & .user {
-    @apply mt-2.5 flex flex-row flex-wrap gap-5;
-  }
-
-  & .user .avatar {
-    @apply flex flex-row items-center gap-1.5;
-  }
-
-  & .user .avatar p {
-    @apply text-xs text-dark-200;
-  }
-
-  & .borrow-date {
-    @apply flex flex-row items-center gap-1.5;
-  }
-
-  & .borrow-date p {
-    @apply text-xs text-dark-200;
-  }
-}
-
-@utility title {
-  .book-stripe & {
-    @apply font-semibold text-base text-dark-400 line-clamp-1;
-  }
-}
-
-@utility author {
-  .book-stripe & {
-    @apply flex flex-wrap flex-row items-center gap-2;
-  }
-
-  .book-stripe & p:first-child {
-    @apply text-light-500 text-sm line-clamp-1;
-  }
-
-  .book-stripe & div {
-    @apply size-1 rounded-full bg-light-500;
-  }
-
-  .book-stripe & p:last-child {
-    @apply text-light-500 text-sm;
-  }
-}
-
-@utility user {
-  .book-stripe & {
-    @apply mt-2.5 flex flex-row flex-wrap gap-5;
-  }
-
-  .book-stripe & .avatar {
-    @apply flex flex-row items-center gap-1.5;
-  }
-
-  .book-stripe & .avatar p {
-    @apply text-xs text-dark-200;
-  }
-
-  .admin-sidebar & {
-    @apply my-8 flex w-full flex-row gap-2 rounded-full border border-light-400 px-6 py-2 shadow-xs max-md:px-2;
-  }
-}
-
-@utility avatar {
-  .book-stripe .user & {
-    @apply flex flex-row items-center gap-1.5;
-  }
-
-  .book-stripe .user & p {
-    @apply text-xs text-dark-200;
-  }
-}
-
-@utility borrow-date {
-  .book-stripe & {
-    @apply flex flex-row items-center gap-1.5;
-  }
-
-  .book-stripe & p {
-    @apply text-xs text-dark-200;
-  }
-}
-
-@utility color-picker {
-  /* Color Picker */
-  @apply flex min-h-14 flex-row items-center gap-3 rounded-md border border-gray-100 bg-light-600 p-4 text-base font-semibold text-dark-400;
-}
-
-@utility hex-input {
-  @apply h-full flex-1 bg-transparent font-ibm-plex-sans outline-hidden;
-}
-
-@utility hex-color-picker {
-  @apply absolute left-0 top-full z-50 mt-3;
-}
-
-@utility error-fallback {
-  /* Error Fallback */
-  @apply p-4 bg-red-100 text-red-700 rounded-md;
-
-  & h2 {
-    @apply text-lg font-semibold mb-2;
-  }
-}
-
-@utility admin-header {
-  /* Header */
-  @apply flex lg:items-end items-start justify-between lg:flex-row flex-col gap-5 sm:mb-10 mb-5;
-}
-
-@utility admin-search {
-  /* Search */
-  @apply flex border border-gray-100 min-h-14 items-center gap-1 rounded-md bg-light-600 px-4 lg:max-w-md w-full;
-}
-
-@utility admin-search_input {
-  @apply w-full! border-0! shadow-none! bg-transparent! outline-hidden! focus:outline-hidden! focus:ring-0! focus:border-0!;
-}
-
-@utility admin-sidebar {
-  /* Sidebar */
-  @apply sticky left-0 top-0 flex h-dvh flex-col justify-between bg-white px-5 pb-5 pt-10;
-
-  & .logo {
-    @apply flex flex-row items-center gap-2 border-b border-dashed border-primary-admin/20 pb-10 max-md:justify-center;
-  }
-
-  & .logo h1 {
-    @apply text-2xl font-semibold text-primary-admin max-md:hidden;
-  }
-
-  & .link {
-    @apply flex flex-row items-center w-full gap-2 rounded-lg px-5 py-3.5 max-md:justify-center;
-  }
-
-  & .link p {
-    @apply text-base font-medium max-md:hidden;
-  }
-
-  & .user {
-    @apply my-8 flex w-full flex-row gap-2 rounded-full border border-light-400 px-6 py-2 shadow-xs max-md:px-2;
-  }
-}
-
-@utility logo {
-  .admin-sidebar & {
-    @apply flex flex-row items-center gap-2 border-b border-dashed border-primary-admin/20 pb-10 max-md:justify-center;
-  }
-
-  .admin-sidebar & h1 {
-    @apply text-2xl font-semibold text-primary-admin max-md:hidden;
-  }
-}
-
-@utility link {
-  .admin-sidebar & {
-    @apply flex flex-row items-center w-full gap-2 rounded-lg px-5 py-3.5 max-md:justify-center;
-  }
-
-  .admin-sidebar & p {
-    @apply text-base font-medium max-md:hidden;
-  }
-}
-
-@utility user-card {
-  /* User Card */
-  @apply w-40 bg-light-300 py-4 px-3 flex justify-center items-center flex-col rounded-xl text-center;
-
-  & .name {
-    @apply font-medium mt-3 text-dark-400 line-clamp-1 w-full break-words;
-  }
-
-  & .email {
-    @apply text-light-500 text-sm line-clamp-1 break-words w-full;
-  }
-}
-
-@utility name {
-  .user-card & {
-    @apply font-medium mt-3 text-dark-400 line-clamp-1 w-full break-words;
-  }
-}
-
-@utility email {
-  .user-card & {
-    @apply text-light-500 text-sm line-clamp-1 break-words w-full;
-  }
 }
 
 @layer base {
