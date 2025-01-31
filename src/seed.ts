@@ -4,7 +4,7 @@ import ImageKit from "imagekit";
 import { config } from "dotenv";
 import { books } from "./lib/schema";
 import * as schema from "./lib/schema";
-import { drizzle } from "drizzle-orm/libsql";
+import { drizzle } from "drizzle-orm/libsql/web";
 
 config({ path: ".env.local" });
 

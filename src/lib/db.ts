@@ -1,4 +1,4 @@
-import { drizzle } from "drizzle-orm/libsql";
+import { drizzle } from "drizzle-orm/libsql/web";
 import config from "./config";
 import * as schema from "./schema";
 const db = drizzle({
